@@ -1,24 +1,204 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
 
 .container {
-
+    max-width: 1090px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
 
 .hero {
-    min-height: 100vh;
-
-    background: url() no-repeat;
+    background: url(/src/images/design/hero-background.png) no-repeat;
     background-size: cover;
 
     header {
         display: flex;
         padding: 40px 0;
     }
+
+    &-title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-between;
+
+        min-height: calc(100vh - 50px);
+
+        @media screen and (max-width: 1024px) {
+            min-height: auto;
+        }
+    }
 }
 
 .hero-nav {
-    &__list {
+    margin-left: 120px;
+
+    &__list { 
         list-style-type: none;
+
+        // flex 
+        display: flex;
+        height: 32px;
+        align-items: center;
+    }
+
+    &__item {
+        display: inline-block;
+        
+
+        & + & {
+            padding-left: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        display: none;
     }
 }
+
+
+.hero-cta {
+    &__text {
+        margin: 35px 0;
+    }
+
+
+    h1 {
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;     
+        letter-spacing: 0.2px;  
+    
+        color: $text-color;
+    
+        text-transform: uppercase;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+
+        color: $second-text-color;
+    }
+}
+
+.hero-info {
+    display: flex;
+
+    position: relative;
+    top: 20px;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.hero-info-item {
+    background-color: #fff;
+    width: 100%;
+    padding: 35px 30px;
+
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: $text-color;
+
+        margin: 10px 0;
+
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        color: $second-text-color;
+    }
+
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 20px;
+    }
+    
+
+
+}
+
+
+.feature {
+    background-color: #fafafa;
+    padding: 100px;
+
+    &-title{
+        text-align: center;
+    }
+
+    p {
+        width: 1000px;;
+    }
+
+    h2 {
+        font-size: 50px;
+        padding: 10px;
+    }
+
+    &-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    &-item {
+        background-color: #fff;
+        width: 25%  ;
+        padding: 40px 25px;
+        margin: 15px;
+    }
+
+    &-item_practice {
+
+
+        h5 {
+            font-size: 18px;
+            width: 90%;
+            text-align: start;
+        }
+
+        p {
+            width: 100%;
+            text-align: start;
+            padding-top: 20px;
+            line-height: 25px;
+            color: $text-color;
+        }
+
+        height: 300px;
+        width: 25%;
+        margin: 20px;
+        padding: 30px;
+        background-color: #fff;
+    }
+
+ }
