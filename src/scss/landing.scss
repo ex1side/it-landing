@@ -19,6 +19,7 @@ body{
     header {
         display: flex;
         padding: 40px 0;
+        color: $text-color;
     }
 
     &-title {
@@ -140,10 +141,15 @@ body{
         margin-bottom: 20px;
     }
     
+    
 
 
 }
 
+.selected-item {
+        background-color: $secondary-color-1;
+        color: #fff;
+    }
 
 .feature {
     background-color: #fafafa;
@@ -151,15 +157,23 @@ body{
 
     &-title{
         text-align: center;
+        color: $text-color;
     }
 
     p {
         width: 1000px;;
+        font-size: 14px;
+        color: $second-text-color;
     }
 
     h2 {
+        color: $text-color;
         font-size: 50px;
         padding: 10px;
+        font-weight: 700;
+    }
+    .why-choose-text {
+        text-transform: uppercase;
     }
 
     &-items {
@@ -172,25 +186,29 @@ body{
 
     &-item {
         background-color: #fff;
-        width: 25%  ;
+        width: 241px;
+        height: 209px;
         padding: 40px 25px;
         margin: 15px;
+        text-transform: uppercase;
+        color: $second-text-color;
     }
 
     &-item_practice {
 
 
         h5 {
-            font-size: 18px;
+            color: $text-color;
+            font-size: 16px;
+            font-weight: 700;
             width: 90%;
-            text-align: start;
         }
 
         p {
+            font-size: 14px;
             width: 100%;
-            text-align: start;
             padding-top: 20px;
-            line-height: 25px;
+            line-height: 20px;
             color: $text-color;
         }
 
@@ -198,7 +216,15 @@ body{
         width: 25%;
         margin: 20px;
         padding: 30px;
-        background-color: #fff;
+        background-color: #fff;   
     }
 
+    
+
  }
+.practice-advice-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }

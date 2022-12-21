@@ -309,6 +309,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 40px 0;
+  color: #252B42;
 }
 .hero-title {
   font-weight: 700;
@@ -425,19 +426,32 @@ body {
   }
 }
 
+.selected-item {
+  background-color: #00A0C1;
+  color: #fff;
+}
+
 .feature {
   background-color: #fafafa;
   padding: 100px;
 }
 .feature-title {
   text-align: center;
+  color: #252B42;
 }
 .feature p {
   width: 1000px;
+  font-size: 14px;
+  color: #737373;
 }
 .feature h2 {
+  color: #252B42;
   font-size: 50px;
   padding: 10px;
+  font-weight: 700;
+}
+.feature .why-choose-text {
+  text-transform: uppercase;
 }
 .feature-items {
   display: -webkit-box;
@@ -454,9 +468,12 @@ body {
 }
 .feature-item {
   background-color: #fff;
-  width: 25%;
+  width: 241px;
+  height: 209px;
   padding: 40px 25px;
   margin: 15px;
+  text-transform: uppercase;
+  color: #737373;
 }
 .feature-item_practice {
   height: 300px;
@@ -466,14 +483,28 @@ body {
   background-color: #fff;
 }
 .feature-item_practice h5 {
-  font-size: 18px;
+  color: #252B42;
+  font-size: 16px;
+  font-weight: 700;
   width: 90%;
-  text-align: start;
 }
 .feature-item_practice p {
+  font-size: 14px;
   width: 100%;
-  text-align: start;
   padding-top: 20px;
-  line-height: 25px;
+  line-height: 20px;
   color: #252B42;
+}
+
+.practice-advice-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
 }
